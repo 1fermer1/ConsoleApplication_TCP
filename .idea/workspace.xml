@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="Полностью настроенная сборка проекта (надеюсь)">
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="read me my friend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +22,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -61,7 +65,7 @@
       <workItem from="1686836927259" duration="14547000" />
       <workItem from="1686864664081" duration="1032000" />
       <workItem from="1686866062402" duration="1630000" />
-      <workItem from="1686867705626" duration="5897000" />
+      <workItem from="1686867705626" duration="6214000" />
     </task>
     <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
       <created>1686877292456</created>
@@ -70,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686877292456</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="read me my friend">
+      <created>1686877664580</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686877664580</updated>
+    </task>
+    <task id="LOCAL-00003" summary="read me my friend">
+      <created>1686877671554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686877671554</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Полностью настроенная сборка проекта (надеюсь)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Полностью настроенная сборка проекта (надеюсь)" />
+    <MESSAGE value="read me my friend" />
+    <option name="LAST_COMMIT_MESSAGE" value="read me my friend" />
   </component>
 </project>
