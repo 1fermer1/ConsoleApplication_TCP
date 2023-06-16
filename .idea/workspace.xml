@@ -5,8 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="read me my friend">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/ClientExecuteManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/AddCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ClearCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/CountLessThanDistanceCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ExecuteScriptCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ExitCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/HelpCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/HistoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ICommandable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/IExecutable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/InfoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/InsertAtCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/PrintAscendingCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/PrintDescendingCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/RemoveByIdCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ReorderCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ShowCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/UpdateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/connectionManagers/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/connectionManagers/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Coordinates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Route.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/LauncherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/Mode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/UserInputService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/jsonLogic/ZonedDateTimeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/messages/CommandMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/messages/GetIdsMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/messages/ServerMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/CoordinatesXValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/CoordinatesYValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/CreationDateValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/DistanceValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/IValidatorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/IdValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/LocationXValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/LocationYValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/validators/NameValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/collection/CollectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/CommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerExecuteManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/commands/SaveCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/jsonLogic/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/UI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +72,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -41,19 +99,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Hp/OneDrive - ITMO UNIVERSITY/ClientServerApplication",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -65,7 +125,10 @@
       <workItem from="1686836927259" duration="14547000" />
       <workItem from="1686864664081" duration="1032000" />
       <workItem from="1686866062402" duration="1630000" />
-      <workItem from="1686867705626" duration="6214000" />
+      <workItem from="1686867705626" duration="6953000" />
+      <workItem from="1686879086172" duration="2773000" />
+      <workItem from="1686884467774" duration="916000" />
+      <workItem from="1686900362716" duration="5456000" />
     </task>
     <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
       <created>1686877292456</created>
@@ -88,7 +151,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686877671554</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="read me my friend">
+      <created>1686878180222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686878180222</updated>
+    </task>
+    <task id="LOCAL-00005" summary="read me my friend">
+      <created>1686878217952</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686878217952</updated>
+    </task>
+    <task id="LOCAL-00006" summary="read me my friend">
+      <created>1686878227963</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686878227963</updated>
+    </task>
+    <task id="LOCAL-00007" summary="read me my friend">
+      <created>1686878265810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686878265810</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
