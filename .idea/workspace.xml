@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="Полностью настроенная сборка проекта (надеюсь)">
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +61,23 @@
       <workItem from="1686836927259" duration="14547000" />
       <workItem from="1686864664081" duration="1032000" />
       <workItem from="1686866062402" duration="1630000" />
-      <workItem from="1686867705626" duration="5503000" />
+      <workItem from="1686867705626" duration="5897000" />
     </task>
+    <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
+      <created>1686877292456</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686877292456</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Полностью настроенная сборка проекта (надеюсь)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Полностью настроенная сборка проекта (надеюсь)" />
   </component>
 </project>
