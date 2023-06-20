@@ -32,11 +32,11 @@ public class Main {
 
         //TODO: чат, конечно, молодец но консоль читается только после клиента, а это дичь а не асинхронный ввод
         try (
-                Selector selector = Selector.open();
+                //Selector selector = Selector.open();
                 ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         ) {
             serverSocketChannel.bind(new InetSocketAddress("127.0.0.1", 8000));
-            serverSocketChannel.configureBlocking(false);
+            //serverSocketChannel.configureBlocking(false);
             //serverSocketChannel.register(selector, SelectionKey.);
 
             while (true) {

@@ -45,12 +45,16 @@ public class Main {
                     // Отправка количества байт сообщения, а после и команды на сервер
                     socketChannel.connect(new InetSocketAddress("127.0.0.1", 8000));
                     String jsonMessage = gson.toJson(message, Message.class);
-                    ByteBuffer buffer = ByteBuffer.wrap(jsonMessage.getBytes());
-                    int cap = buffer.capacity();
+                    int cap = jsonMessage.length();
                     socketChannel.write(ByteBuffer.wrap(Integer.toString(cap).getBytes()));
-                    socketChannel.write(buffer);
-                    buffer.clear();
-                    buffer.flip();
+                    ByteBuffer buffer = ByteBuffer.allocate(1024);
+                    for (int i = 0; i < cap; i += 1024) {
+                        buffer = ByteBuffer.wrap(jsonMessage.substring(0, Math.min(1024, cap - i)).getBytes());
+                        jsonMessage = jsonMessage.substring(Math.min(1024, cap - i));
+                        socketChannel.write(buffer);
+                        buffer.clear();
+                        buffer.flip();
+                    }
 
                     // Сколько байтов отправил сервер
                     buffer = ByteBuffer.allocate(1024);

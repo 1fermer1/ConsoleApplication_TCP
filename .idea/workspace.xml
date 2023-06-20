@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="селектор начало">
+    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="рабочий сервер">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" afterDir="false" />
@@ -46,22 +46,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Hp/OneDrive - ITMO UNIVERSITY/connectionManagers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/OneDrive - ITMO UNIVERSITY/connectionManagers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +83,9 @@
       <workItem from="1687076945555" duration="18168000" />
       <workItem from="1687117754833" duration="5051000" />
       <workItem from="1687216385573" duration="2952000" />
-      <workItem from="1687249661926" duration="9088000" />
+      <workItem from="1687249661926" duration="9471000" />
+      <workItem from="1687270822907" duration="6000" />
+      <workItem from="1687274528547" duration="1630000" />
     </task>
     <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
       <created>1686877292456</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687219567973</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="рабочий сервер">
+      <created>1687263213663</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687263213663</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +168,28 @@
     <MESSAGE value="read me my friend" />
     <MESSAGE value="архитектура" />
     <MESSAGE value="селектор начало" />
-    <option name="LAST_COMMIT_MESSAGE" value="селектор начало" />
+    <MESSAGE value="рабочий сервер" />
+    <option name="LAST_COMMIT_MESSAGE" value="рабочий сервер" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
