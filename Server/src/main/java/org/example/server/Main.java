@@ -22,7 +22,6 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -69,14 +68,20 @@ public class Main {
                     Message message = gson.fromJson(jsonObject, Message.class);
 
                     // Выполняем запрос
-                    message = new Message(null, ("length of your request: " + message.getAnswer().length()), null);
+                    message = new Message(null, ("length of your request: " + message.getAnswer().length() + message.getAnswer()), null);
 
                     // Пишем ответ клиенту
                     String jsonMessage = gson.toJson(message, Message.class);
-                    buffer = ByteBuffer.wrap(jsonMessage.getBytes());
-                    cap = buffer.capacity();
+                    cap = jsonMessage.length();
                     socketChannel.write(ByteBuffer.wrap(Integer.toString(cap).getBytes()));
-                    socketChannel.write(buffer);
+                    buffer = ByteBuffer.allocate(1024);
+                    for (int i = 0; i < cap; i += 1024) {
+                        buffer = ByteBuffer.wrap(jsonMessage.substring(0, Math.min(1024, cap - i)).getBytes());
+                        jsonMessage = jsonMessage.substring(Math.min(1024, cap - i));
+                        socketChannel.write(buffer);
+                        buffer.clear();
+                        buffer.flip();
+                    }
                 }
             }
         } catch (IOException ex) {

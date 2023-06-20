@@ -42,8 +42,9 @@ public class Main {
                     // Обработка строки в команду с аргументами
                     Message message = new Message(null, consoleInput, null);
 
-                    // Отправка количества байт сообщения, а после и команды на сервер
                     socketChannel.connect(new InetSocketAddress("127.0.0.1", 8000));
+
+                    // Отправка количества байт сообщения, а после и команды на сервер
                     String jsonMessage = gson.toJson(message, Message.class);
                     int cap = jsonMessage.length();
                     socketChannel.write(ByteBuffer.wrap(Integer.toString(cap).getBytes()));
@@ -82,7 +83,7 @@ public class Main {
                     message = gson.fromJson(jsonObject, Message.class);
 
                     // Выводим ответ ответ от сервера в консоль
-                    System.out.println(message.getAnswer());
+                    System.out.println(message.getAnswer().length());
                 }
             }
         } catch (IOException ex) {
