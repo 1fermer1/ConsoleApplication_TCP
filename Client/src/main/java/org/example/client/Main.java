@@ -42,19 +42,35 @@ public class Main {
                     // Обработка строки в команду с аргументами
                     Message message = new Message(null, consoleInput, null);
 
-                    // Отправка команды на сервер
+                    // Отправка количества байт сообщения, а после и команды на сервер
                     socketChannel.connect(new InetSocketAddress("127.0.0.1", 8000));
                     String jsonMessage = gson.toJson(message, Message.class);
                     ByteBuffer buffer = ByteBuffer.wrap(jsonMessage.getBytes());
+                    int cap = buffer.capacity();
+                    socketChannel.write(ByteBuffer.wrap(Integer.toString(cap).getBytes()));
                     socketChannel.write(buffer);
+                    buffer.clear();
+                    buffer.flip();
 
-                    // Получение ответа от сервера
-                    StringBuilder stringBuilder = new StringBuilder();
+                    // Сколько байтов отправил сервер
+                    buffer = ByteBuffer.allocate(1024);
                     socketChannel.read(buffer);
                     buffer.flip();
                     byte[] bytes = new byte[buffer.remaining()];
                     buffer.get(bytes);
-                    stringBuilder.append(new String(bytes));
+                    cap = Integer.parseInt(new String(bytes));
+                    buffer.clear();
+
+                    // Получение ответа от сервера
+                    StringBuilder stringBuilder = new StringBuilder();
+                    for (int i = 0; i < cap; i += 1024) {
+                        socketChannel.read(buffer);
+                        buffer.flip();
+                        bytes = new byte[buffer.remaining()];
+                        buffer.get(bytes);
+                        stringBuilder.append(new String(bytes));
+                        buffer.clear();
+                    }
 
                     // Обработка ответа сервера в читаемый объект
                     String jsonAnswer = stringBuilder.toString();
