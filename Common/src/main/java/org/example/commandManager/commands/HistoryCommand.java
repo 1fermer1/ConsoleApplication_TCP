@@ -1,4 +1,13 @@
 package org.example.commandManager.commands;
 
-public class HistoryCommand {
+import org.example.data.Route;
+
+public class HistoryCommand implements ICommandable {
+    public String getName() {
+        return "history";
+    }
+
+    public String getDescr() {
+        return "вывести последние 5 команд (без их аргументов)";
+    }
 }

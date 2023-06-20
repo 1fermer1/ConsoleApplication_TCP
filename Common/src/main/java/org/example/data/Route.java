@@ -4,12 +4,12 @@ import java.time.ZonedDateTime;
 
 public class Route implements Comparable<Route> {
     private int id; // Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
-    private String name;
-    private Coordinates coordinates;
-    private ZonedDateTime creationDate;
-    private Location from;
-    private Location to;
-    private int distance;
+    private String name; // Поле не может быть null, Строка не может быть пустой
+    private Coordinates coordinates; // Поле не может быть null
+    private ZonedDateTime creationDate; // Поле не может быть null, Значение этого поля должно генерироваться автоматически
+    private Location from; // Поле может быть null
+    private Location to; // Поле может быть null
+    private int distance; // Значение поля должно быть больше 1
 
     private Route() {
 
@@ -66,7 +66,7 @@ public class Route implements Comparable<Route> {
         this.to = to;
     }
 
-    public int getDistance() {
+    public Integer getDistance() {
         return distance;
     }
     public void setDistance(int distance) {
@@ -97,6 +97,7 @@ public class Route implements Comparable<Route> {
                 "\n\tdistance: " + distance;
     }
 
+    // TODO: сортировка по местоположению должна быть
     @Override
     public int compareTo(Route route) {
         return this.name.compareTo(route.name);

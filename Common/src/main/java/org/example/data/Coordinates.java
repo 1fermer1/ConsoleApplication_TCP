@@ -12,7 +12,7 @@ public class Coordinates {
         this.y = y;
     }
 
-    public long getX() {
+    public Long getX() {
         return x;
     }
     public void setX(long x) {

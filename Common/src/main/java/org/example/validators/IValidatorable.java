@@ -1,4 +1,5 @@
 package org.example.validators;
 
-public class IValidatorable {
+public interface IValidatorable {
+    boolean validate(String value);
 }
