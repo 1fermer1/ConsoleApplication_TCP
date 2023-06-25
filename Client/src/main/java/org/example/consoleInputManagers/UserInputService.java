@@ -5,7 +5,6 @@ import java.io.File;
 
 public class UserInputService {
     private static BufferedReader bufferedReader;
-    private static InputMode inputMode;
     private static File scriptFile;
 
     public static void setScriptFile(File scriptFile) {
@@ -14,14 +13,6 @@ public class UserInputService {
 
     public static File getScriptFile() {
         return scriptFile;
-    }
-
-    public static void setInputMode(InputMode inputMode) {
-        UserInputService.inputMode = inputMode;
-    }
-
-    public static InputMode getInputMode() {
-        return inputMode;
     }
 
     public static void setBufferedReader(BufferedReader bufferedReader) {

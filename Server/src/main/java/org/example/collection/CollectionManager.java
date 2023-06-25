@@ -1,9 +1,11 @@
 package org.example.collection;
 
 import org.example.data.Route;
+import org.example.validators.IdValidator;
 
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class CollectionManager {
     private static ZonedDateTime collectionInitializationDate = ZonedDateTime.now();
@@ -37,6 +39,16 @@ public class CollectionManager {
         }
 
         return idsCollection;
+    }
+
+    public Integer generateId() {
+        Random random = new Random();
+        int newID = Math.abs(random.nextInt());
+        ArrayList<Integer> arrayIds = getIdsCollection();
+        while (arrayIds.contains(newID)) {
+            newID = Math.abs(random.nextInt());
+        }
+        return newID;
     }
 
     public ZonedDateTime getCollectionInitializationDate() {

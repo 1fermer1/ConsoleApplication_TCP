@@ -5,6 +5,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.example.collection.CollectionManager;
+import org.example.commandManager.ServerExecuteManager;
+import org.example.commandManager.commands.ICommandable;
+import org.example.commandManager.commands.IExecutable;
+import org.example.data.Route;
 import org.example.jsonLogic.IntegerArrayAdapter;
 import org.example.jsonLogic.Parser;
 import org.example.jsonLogic.ZonedDateTimeAdapter;
@@ -18,14 +22,14 @@ import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 
 public class Main {
     public static void main(String[] args) {
         //Загрузка коллекции из json
         new Parser().readJsonFile("config.env");
 
-        //TODO: настроить message и execute
-
+        LinkedHashMap<String, IExecutable> serverExecuteManager = new ServerExecuteManager().getServerExecuteManager();
         final Gson gson = new GsonBuilder().registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter()).registerTypeAdapter(ArrayList.class, new IntegerArrayAdapter()).create();
 
         try (
@@ -33,7 +37,6 @@ public class Main {
                 BufferedReader consoleInput = new BufferedReader(new InputStreamReader(System.in));
         ) {
             serverSocketChannel.bind(new InetSocketAddress("127.0.0.1", 8000));
-            //serverSocketChannel.configureBlocking(false);
 
             while (true) {
                 SocketChannel socketChannel = serverSocketChannel.accept();
@@ -64,7 +67,10 @@ public class Main {
                 Message message = gson.fromJson(jsonObject, Message.class);
 
                 // Выполняем запрос
-                message = new Message(null, ("length of your request: " + message.getAnswer().length() + message.getAnswer()), null);
+                ICommandable command = message.getCommand();
+                Route route = command.getRoute();
+                route.setId(new CollectionManager().generateId());
+                message = serverExecuteManager.get(command.getName()).execute(command.getArgs(), route);
 
                 // Пишем ответ клиенту
                 String jsonMessage = gson.toJson(message, Message.class);

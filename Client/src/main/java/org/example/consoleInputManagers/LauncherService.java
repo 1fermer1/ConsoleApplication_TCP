@@ -21,26 +21,21 @@ import java.util.LinkedHashMap;
 public class LauncherService {
     final static Gson gson = new GsonBuilder().registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter()).registerTypeAdapter(ArrayList.class, new IntegerArrayAdapter()).create();
 
-    public static void init() {
-        UserInputService.setInputMode(InputMode.CONSOLE_INPUT);
-        //Array.fill(, "");
-        //TODO: установить массив хисторив пустую
-        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus :)");
-        launcher();
-    }
-
-    //TODO: сделать чтобы скрипт мог вызывать другие скрипты
-
     public static void launcher() {
-//TODO: while true на ввод и вызов меги
+        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus :)");
+        while (true) {
+
+        }
     }
 
     public static void fileCommandExecute() {
-
+        //TODO: сделать чтобы скрипт мог вызывать другие скрипты
+        // (крч изи тупа нужно перед тем как выполнять команды из экзекьюта
+        // сначала спарсить их в список команд, ток нужно сделать отлов стекОверФлов)
     }
 
     public static void defaultCommandExecute() {
-//TODO: настроить message и execute
+        //TODO: настроить message и execute
     }
 
     // файлообменник

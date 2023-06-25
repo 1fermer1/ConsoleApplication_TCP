@@ -1,6 +1,6 @@
 package org.example.data;
 
-public class Coordinates {
+public class Coordinates implements Comparable<Coordinates> {
     private long x;
     private Integer y; // Значение поля должно быть больше -807, Поле не может быть null
 
@@ -26,6 +26,11 @@ public class Coordinates {
         this.y = y;
     }
 
+    public Long vector() {
+        Double temp = Math.sqrt(x * x + y * y);
+        return temp.longValue();
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == null || this.getClass() != obj.getClass()) {
@@ -41,5 +46,10 @@ public class Coordinates {
     @Override
     public String toString() {
         return "(" + x + "; " + y + ")";
+    }
+
+    @Override
+    public int compareTo(Coordinates coordinates) {
+        return this.vector().compareTo(coordinates.vector());
     }
 }

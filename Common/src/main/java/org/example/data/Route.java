@@ -15,7 +15,6 @@ public class Route implements Comparable<Route> {
 
     }
     private Route(String name, Coordinates coordinates, Location from, Location to, int distance) {
-        //TODO: id generator with use uuid or random???
         this.name = name;
         this.coordinates = coordinates;
         creationDate = ZonedDateTime.now();
@@ -27,7 +26,7 @@ public class Route implements Comparable<Route> {
     public Integer getId() {
         return id;
     }
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -97,9 +96,8 @@ public class Route implements Comparable<Route> {
                 "\n\tdistance: " + distance;
     }
 
-    // TODO: сортировка по местоположению должна быть
     @Override
     public int compareTo(Route route) {
-        return this.name.compareTo(route.name);
+        return this.coordinates.compareTo(route.coordinates);
     }
 }

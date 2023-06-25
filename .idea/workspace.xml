@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="могу!!! отправить 400к символов">
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/LauncherService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/UserInputService.java" afterDir="false" />
+    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="настройка читателя консоли на клиенте">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/ClientExecuteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/ClientExecuteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ICommandable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ICommandable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/IExecutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/IExecutable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/InputMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/InputMode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/LauncherService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/UserInputService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerExecuteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerClientExecuteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/jsonLogic/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/jsonLogic/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/InputMode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/LauncherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/LauncherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/UserInputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/UserInputService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/data/Route.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/collection/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/collection/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerClientExecuteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerExecuteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/commands/SaveCommand.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/builds/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/builds/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/server.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +45,9 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2RFDRFslNmu4M36cYG2gfXVAWXx" />
   <component name="ProjectLevelVcsManager">
@@ -108,7 +107,7 @@
       <workItem from="1687435704651" duration="155000" />
       <workItem from="1687456423600" duration="10000" />
       <workItem from="1687607955220" duration="12161000" />
-      <workItem from="1687703592564" duration="3484000" />
+      <workItem from="1687703592564" duration="10955000" />
     </task>
     <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
       <created>1686877292456</created>
@@ -194,11 +193,30 @@
       <option name="project" value="LOCAL" />
       <updated>1687292500088</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="настройка читателя консоли на клиенте">
+      <option name="closed" value="true" />
+      <created>1687708235904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687708235904</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Полностью настроенная сборка проекта (надеюсь)" />
@@ -208,6 +226,7 @@
     <MESSAGE value="рабочий сервер" />
     <MESSAGE value="могу отправить 400к символов" />
     <MESSAGE value="могу!!! отправить 400к символов" />
-    <option name="LAST_COMMIT_MESSAGE" value="могу!!! отправить 400к символов" />
+    <MESSAGE value="настройка читателя консоли на клиенте" />
+    <option name="LAST_COMMIT_MESSAGE" value="настройка читателя консоли на клиенте" />
   </component>
 </project>

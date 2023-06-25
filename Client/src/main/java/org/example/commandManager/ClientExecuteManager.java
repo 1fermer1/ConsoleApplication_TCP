@@ -10,7 +10,7 @@ import java.util.LinkedHashMap;
 
 public class ClientExecuteManager {
     private LinkedHashMap<String, IExecutable> clientExecuteManager;
-
+    //TODO: сделать все команды
     public LinkedHashMap<String, IExecutable> getClientExecuteManager() {
         return clientExecuteManager;
     }
