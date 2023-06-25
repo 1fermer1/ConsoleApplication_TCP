@@ -20,11 +20,17 @@ import java.util.LinkedHashMap;
 
 public class LauncherService {
     final static Gson gson = new GsonBuilder().registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter()).registerTypeAdapter(ArrayList.class, new IntegerArrayAdapter()).create();
+    private static LinkedHashMap<String, ICommandable> commands;
+
+    public static void init() {
+        commands = new CommandManager().getCommands();
+        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus :)");
+        launcher();
+    }
 
     public static void launcher() {
-        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus :)");
         while (true) {
-
+            UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(System.in)));
         }
     }
 
