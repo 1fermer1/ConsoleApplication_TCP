@@ -27,7 +27,6 @@ public class CommandManager {
         commands.put("print_descending", new PrintDescendingCommand());
         commands.put("remove_by_id", new RemoveByIdCommand());
         commands.put("reorder", new ReorderCommand());
-        commands.put("save", new SaveCommand());
         commands.put("show", new ShowCommand());
         commands.put("update", new UpdateCommand());
     }

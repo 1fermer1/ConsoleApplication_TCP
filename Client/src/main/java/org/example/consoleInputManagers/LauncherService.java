@@ -4,8 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.example.commandManager.ClientExecuteManager;
 import org.example.commandManager.CommandManager;
 import org.example.commandManager.commands.ICommandable;
+import org.example.commandManager.commands.IExecutable;
 import org.example.jsonLogic.IntegerArrayAdapter;
 import org.example.jsonLogic.ZonedDateTimeAdapter;
 import org.example.messages.Message;
@@ -19,34 +21,42 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 public class LauncherService {
-    final static Gson gson = new GsonBuilder().registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter()).registerTypeAdapter(ArrayList.class, new IntegerArrayAdapter()).create();
-    private static LinkedHashMap<String, ICommandable> commands;
+    private final static Gson gson = new GsonBuilder().registerTypeAdapter(ZonedDateTime.class, new ZonedDateTimeAdapter()).registerTypeAdapter(ArrayList.class, new IntegerArrayAdapter()).create();
+    private final static LinkedHashMap<String, ICommandable> commands = new CommandManager().getCommands();
+    private final static LinkedHashMap<String, IExecutable> clientExecuteManager = new ClientExecuteManager().getClientExecuteManager();
+    private static BufferedReader bufferedReader;
 
     public static void init() {
-        commands = new CommandManager().getCommands();
-        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus :)");
-        launcher();
+        System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus...");
+        bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        defaultCommandExecute();
     }
 
-    public static void launcher() {
-        while (true) {
-            try {
-                UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(System.in)));
-                String commandName = UserInputService.getBufferedReader().readLine();
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        }
-    }
-
-    public static void fileCommandExecute() {
+    public static void scriptCommandExecute() {
         //TODO: сделать чтобы скрипт мог вызывать другие скрипты
         // (крч изи тупа нужно перед тем как выполнять команды из экзекьюта
         // сначала спарсить их в список команд, ток нужно сделать отлов стекОверФлов)
     }
 
     public static void defaultCommandExecute() {
-        //TODO: настроить message и execute
+        try {
+            while (true) {
+                String[] splitCommandName = bufferedReader.readLine().trim().split(" ");
+                Message message;
+                if (splitCommandName.length == 1) {
+                    message = clientExecuteManager.get(splitCommandName[0]).execute(null, null);
+                } else {
+                    message = clientExecuteManager.get(splitCommandName[0]).execute(splitCommandName[1], null);
+                }
+                message = mega(message);
+                System.out.println(message.getAnswer());
+            }
+        } catch (IOException ex) {
+            throw new RuntimeException(ex);
+        } catch (NullPointerException ex) {
+            System.out.println("Ctrl D detected");
+            System.exit(0);
+        }
     }
 
     // файлообменник

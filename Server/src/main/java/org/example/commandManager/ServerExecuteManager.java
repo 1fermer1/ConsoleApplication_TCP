@@ -22,7 +22,19 @@ public class ServerExecuteManager {
         serverExecuteManager = new LinkedHashMap<>();
 
         serverExecuteManager.put("add", this::addSettings);
+        serverExecuteManager.put("clear", this::clearSettings);
+        serverExecuteManager.put("count_less_than_distance", this::countLessThanDistanceSettings);
+        serverExecuteManager.put("execute_script", this::executeScriptSettings);
+        serverExecuteManager.put("help", this::helpSettings);
+        serverExecuteManager.put("history", this::historySettings);
+        serverExecuteManager.put("info", this::infoSettings);
+        serverExecuteManager.put("insert_at", this::insertAtSettings);
+        serverExecuteManager.put("print_ascending", this::printAscendingSettings);
+        serverExecuteManager.put("print_descending", this::printDescendingSettings);
+        serverExecuteManager.put("remove_by_id", this::removeByIdSettings);
+        serverExecuteManager.put("reorder", this::reorderSettings);
         serverExecuteManager.put("show", this::showSettings);
+        serverExecuteManager.put("update", this::updateSettings);
     }
 
     private void setLastCommand(String commandName) {
@@ -41,6 +53,72 @@ public class ServerExecuteManager {
         return new Message(null, "> ", null);
     }
 
+    private Message clearSettings(Object args, Route route) {
+
+        setLastCommand("clear");
+        return new Message(null, null, null);
+    }
+
+    private Message countLessThanDistanceSettings(Object args, Route route) {
+
+        setLastCommand("count_less_than_distance");
+        return new Message(null, null, null);
+    }
+
+    private Message executeScriptSettings(Object args, Route route) {
+
+        setLastCommand("execute_script");
+        return new Message(null, null, null);
+    }
+
+    private Message helpSettings(Object args, Route route) {
+
+        setLastCommand("help");
+        return new Message(null, null, null);
+    }
+
+    private Message historySettings(Object args, Route route) {
+
+        setLastCommand("history");
+        return new Message(null, null, null);
+    }
+
+    private Message infoSettings(Object args, Route route) {
+
+        setLastCommand("info");
+        return new Message(null, null, null);
+    }
+
+    private Message insertAtSettings(Object args, Route route) {
+
+        setLastCommand("insert_at");
+        return new Message(null, null, null);
+    }
+
+    private Message printAscendingSettings(Object args, Route route) {
+
+        setLastCommand("print_ascending");
+        return new Message(null, null, null);
+    }
+
+    private Message printDescendingSettings(Object args, Route route) {
+
+        setLastCommand("print_descending");
+        return new Message(null, null, null);
+    }
+
+    private Message removeByIdSettings(Object args, Route route) {
+
+        setLastCommand("remove_by_id");
+        return new Message(null, null, null);
+    }
+
+    private Message reorderSettings(Object args, Route route) {
+
+        setLastCommand("reorder");
+        return new Message(null, null, null);
+    }
+
     private Message showSettings(Object args, Route route) {
         String showCollection = "";
         int i = 0;
@@ -51,5 +129,11 @@ public class ServerExecuteManager {
 
         setLastCommand("show");
         return new Message(null, showCollection, null);
+    }
+
+    private Message updateSettings(Object args, Route route) {
+
+        setLastCommand("update");
+        return new Message(null, null, null);
     }
 }
