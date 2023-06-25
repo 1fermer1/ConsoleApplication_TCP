@@ -30,7 +30,12 @@ public class LauncherService {
 
     public static void launcher() {
         while (true) {
-            UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(System.in)));
+            try {
+                UserInputService.setBufferedReader(new BufferedReader(new InputStreamReader(System.in)));
+                String commandName = UserInputService.getBufferedReader().readLine();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
         }
     }
 
