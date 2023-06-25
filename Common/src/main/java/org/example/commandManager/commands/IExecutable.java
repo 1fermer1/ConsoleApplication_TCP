@@ -1,7 +1,8 @@
 package org.example.commandManager.commands;
 
 import org.example.data.Route;
+import org.example.messages.Message;
 
 public interface IExecutable {
-    String execute(Object args, Route route);
+    Message execute(Object args, Route route);
 }

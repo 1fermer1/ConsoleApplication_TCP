@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="могу отправить 400к символов">
+    <list default="true" id="3a819049-594f-4331-a656-4fd795eb7166" name="Changes" comment="могу!!! отправить 400к символов">
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/LauncherService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/UserInputService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/client/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/ClientExecuteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/commandManager/ClientExecuteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ICommandable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/ICommandable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/IExecutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/main/java/org/example/commandManager/commands/IExecutable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/InputMode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/org/example/consoleInputManagers/InputMode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/LauncherService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/main/java/org/example/inputManager/UserInputService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerExecuteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/commandManager/ServerClientExecuteManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/jsonLogic/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/jsonLogic/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builds/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/builds/server.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.docx" beforeDir="false" afterPath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/P3116 Ткачев_Илья_Андреевич ЛР6 Отчет.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +65,13 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/OneDrive - ITMO UNIVERSITY/connectionManagers&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/OneDrive - ITMO UNIVERSITY/Все за второй сем/прога/consoleApplication&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -85,7 +100,15 @@
       <workItem from="1687270822907" duration="6000" />
       <workItem from="1687274528547" duration="2065000" />
       <workItem from="1687288252131" duration="513000" />
-      <workItem from="1687291813652" duration="511000" />
+      <workItem from="1687291813652" duration="742000" />
+      <workItem from="1687354209662" duration="445000" />
+      <workItem from="1687354730820" duration="1222000" />
+      <workItem from="1687398707701" duration="5650000" />
+      <workItem from="1687428168116" duration="7106000" />
+      <workItem from="1687435704651" duration="155000" />
+      <workItem from="1687456423600" duration="10000" />
+      <workItem from="1687607955220" duration="12161000" />
+      <workItem from="1687703592564" duration="3484000" />
     </task>
     <task id="LOCAL-00001" summary="Полностью настроенная сборка проекта (надеюсь)">
       <created>1686877292456</created>
@@ -164,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687276579302</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="могу!!! отправить 400к символов">
+      <created>1687292500088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687292500088</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,17 +207,7 @@
     <MESSAGE value="селектор начало" />
     <MESSAGE value="рабочий сервер" />
     <MESSAGE value="могу отправить 400к символов" />
-    <option name="LAST_COMMIT_MESSAGE" value="могу отправить 400к символов" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/server/Main.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="могу!!! отправить 400к символов" />
+    <option name="LAST_COMMIT_MESSAGE" value="могу!!! отправить 400к символов" />
   </component>
 </project>

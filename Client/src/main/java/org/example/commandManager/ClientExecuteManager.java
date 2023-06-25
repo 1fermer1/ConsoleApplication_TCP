@@ -1,10 +1,12 @@
 package org.example.commandManager;
 
+import org.example.commandManager.commands.AddCommand;
 import org.example.commandManager.commands.IExecutable;
+import org.example.commandManager.commands.ShowCommand;
 import org.example.data.Route;
+import org.example.messages.Message;
 
 import java.util.LinkedHashMap;
-import java.util.Random;
 
 public class ClientExecuteManager {
     private LinkedHashMap<String, IExecutable> clientExecuteManager;
@@ -20,11 +22,13 @@ public class ClientExecuteManager {
         clientExecuteManager.put("show", this::showSettings);
     }
 
-    private String addSettings(Object args, Route route) {
-        return "> ";
+    private Message addSettings(Object args, Route route) {
+        AddCommand addCommand = new AddCommand();
+        //TODO: make route and push in add
+        return new Message(addCommand, null, null);
     }
 
-    private String showSettings(Object args, Route route) {
-        return "server answer: ";
+    private Message showSettings(Object args, Route route) {
+        return new Message(new ShowCommand(), null, null);
     }
 }

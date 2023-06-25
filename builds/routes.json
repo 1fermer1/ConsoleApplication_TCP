@@ -1,0 +1,42 @@
+[
+  {
+    "id": 100100100,
+    "name": "my first route",
+    "coordinates": {
+      "x": 10,
+      "y": 999
+    },
+    "creationDate": "2022-01-01T10:10:10.000001+03:00[Europe/Moscow]",
+    "from": {
+      "x": 34.43,
+      "y": 13.31,
+      "name": "houmie"
+    },
+    "to": {
+      "x": 43.34,
+      "y": 31.13,
+      "name": "hard job"
+    },
+    "distance": 555
+  },
+  {
+    "id": 777000777,
+    "name": "YAMAUGLY",
+    "coordinates": {
+      "x": 333,
+      "y": 333
+    },
+    "creationDate": "2002-11-11T23:59:59.999999+03:00[Europe/Moscow]",
+    "from": {
+      "x": -100.1,
+      "y": 1000.1,
+      "name": "sirenogolovi"
+    },
+    "to": {
+      "x": 888888.888888,
+      "y": 777000.000999,
+      "name": "block"
+    },
+    "distance": 4343434343
+  }
+]

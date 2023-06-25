@@ -1,4 +1,4 @@
-package org.example.inputManager;
+package org.example.consoleInputManagers;
 
 public enum InputMode {
     CONSOLE_INPUT,

@@ -6,6 +6,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import org.example.collection.CollectionManager;
 import org.example.data.Route;
 import org.example.validators.*;
 
@@ -34,7 +35,7 @@ public class Parser {
                 JsonObject obj = JsonParser.parseReader(reader).getAsJsonObject();
                 Route route = gson.fromJson(obj, Route.class);
                 IdValidator idValidator = new IdValidator();
-                //TODO: idValidator.setArrayIds();
+                idValidator.setArrayIds(new CollectionManager().getIdsCollection());
                 if (idValidator.validate(route.getId().toString()) &&
                     new NameValidator().validate(route.getName()) &&
                     new CoordinatesXValidator().validate(route.getCoordinates().getX().toString()) &&
@@ -49,7 +50,7 @@ public class Parser {
                         new LocationYValidator().validate(route.getTo().getX().toString()) &&
                         !route.getTo().getName().equals("") &&
                     new DistanceValidator().validate(route.getDistance().toString()))) {
-                    //TODO: add in collection
+                    new CollectionManager().addRoute(route);
                 }
             }
             reader.endArray();

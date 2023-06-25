@@ -1,6 +1,7 @@
 package org.example.commandManager.commands;
 
 import org.example.data.Route;
+import org.example.messages.Message;
 
 public interface ICommandable<T> {
     String getName();
@@ -26,7 +27,7 @@ public interface ICommandable<T> {
         return;
     }
 
-    default String execute(IExecutable executeSettings, Object args, Route route) {
+    default Message execute(IExecutable executeSettings, Object args, Route route) {
         return executeSettings.execute(args, route);
     }
 }
