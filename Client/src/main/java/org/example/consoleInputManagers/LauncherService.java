@@ -26,6 +26,10 @@ public class LauncherService {
     private final static LinkedHashMap<String, IExecutable> clientExecuteManager = new ClientExecuteManager().getClientExecuteManager();
     private static BufferedReader bufferedReader;
 
+    public static void setBufferedReader(BufferedReader bufferedReader) {
+        LauncherService.bufferedReader = bufferedReader;
+    }
+
     public static void init() {
         System.out.println("Hello! And welcome to the Los Pollos Hermanos family! My name is Gustavo, but you can call me Gus...");
         bufferedReader = new BufferedReader(new InputStreamReader(System.in));

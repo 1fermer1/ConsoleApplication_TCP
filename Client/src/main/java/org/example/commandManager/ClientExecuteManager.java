@@ -1,9 +1,11 @@
 package org.example.commandManager;
 
 import org.example.commandManager.commands.*;
+import org.example.consoleInputManagers.LauncherService;
 import org.example.data.Route;
 import org.example.messages.Message;
 
+import java.io.*;
 import java.util.LinkedHashMap;
 
 public class ClientExecuteManager {
@@ -51,6 +53,12 @@ public class ClientExecuteManager {
     }
 
     private Message executeScriptSettings(Object args, Route route) {
+        try {
+            LauncherService.setBufferedReader(new BufferedReader(new InputStreamReader(new FileInputStream(new File(args.toString())))));
+            //TODO: execute
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        }
         //TODO: execute
         return new Message(null, null, null);
     }

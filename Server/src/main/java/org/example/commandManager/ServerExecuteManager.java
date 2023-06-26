@@ -54,66 +54,77 @@ public class ServerExecuteManager {
     }
 
     private Message clearSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("clear");
         return new Message(null, null, null);
     }
 
     private Message countLessThanDistanceSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("count_less_than_distance");
         return new Message(null, null, null);
     }
 
     private Message executeScriptSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("execute_script");
         return new Message(null, null, null);
     }
 
     private Message helpSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("help");
         return new Message(null, null, null);
     }
 
     private Message historySettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("history");
         return new Message(null, null, null);
     }
 
     private Message infoSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("info");
         return new Message(null, null, null);
     }
 
     private Message insertAtSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("insert_at");
         return new Message(null, null, null);
     }
 
     private Message printAscendingSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("print_ascending");
         return new Message(null, null, null);
     }
 
     private Message printDescendingSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("print_descending");
         return new Message(null, null, null);
     }
 
     private Message removeByIdSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("remove_by_id");
         return new Message(null, null, null);
     }
 
     private Message reorderSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("reorder");
         return new Message(null, null, null);
@@ -132,6 +143,7 @@ public class ServerExecuteManager {
     }
 
     private Message updateSettings(Object args, Route route) {
+        //TODO: execute
 
         setLastCommand("update");
         return new Message(null, null, null);
